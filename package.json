@@ -8,13 +8,15 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "lint": "tsc --noEmit",
-    "clean": "rm -rf dist output"
+    "clean": "rm -rf dist output",
+    "test": "vitest run"
   },
   "keywords": ["pdf", "generator", "typescript", "layout", "tables", "invoice"],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.5.4",
-    "@types/node": "^22.5.0"
+    "@types/node": "^22.5.0",
+    "vitest": "^2.0.0"
   }
 }
