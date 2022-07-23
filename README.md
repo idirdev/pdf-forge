@@ -163,3 +163,30 @@ styles.register('highlight', {
 ## License
 
 MIT
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+pdf-forge est une bibliothèque de génération de PDF avec une API fluide, un moteur de mise en page, la prise en charge des tableaux et un système de templates. Elle génère des fichiers PDF 1.4 valides en TypeScript pur, sans aucune dépendance externe.
+
+### Installation
+```bash
+npm install pdf-forge
+```
+
+### Utilisation
+```typescript
+import { PDFDocument, PAGE_SIZES } from 'pdf-forge';
+import { writeFileSync } from 'fs';
+
+const doc = new PDFDocument({ title: 'Mon Rapport', pageSize: PAGE_SIZES.A4 });
+doc.addPage()
+   .addHeading('Rapport Annuel 2025', 1)
+   .addText('Contenu de votre document...');
+
+writeFileSync('rapport.pdf', doc.generate());
+```
+
+Consultez la documentation anglaise ci-dessus pour la référence complète de l'API, les styles, les tableaux et les templates de factures.
