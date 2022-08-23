@@ -190,3 +190,4 @@ writeFileSync('rapport.pdf', doc.generate());
 ```
 
 Consultez la documentation anglaise ci-dessus pour la référence complète de l'API, les styles, les tableaux et les templates de factures.
+
